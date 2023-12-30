@@ -15,7 +15,7 @@ def about():
     }
     return jsonify(data)
 
-@app.route('/data', methods=['POST'])
+@app.route('/data', methods=['GET'])
 def data():
     data = request.get_json()
     return jsonify({'message': 'Data received successfully'})
