@@ -15,11 +15,6 @@ def about():
     }
     return jsonify(data)
 
-@app.route('/data', methods=['GET'])
-def data():
-    data = request.get_json()
-    return jsonify({'message': 'Data received successfully'})
-
 
 if __name__=="__main__":
     app.run(host="0.0.0.0", port=5000, debug=None)
